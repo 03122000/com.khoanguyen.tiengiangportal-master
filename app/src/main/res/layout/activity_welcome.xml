@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="109dp"
+                android:layout_height="103dp"
+                android:id="@+id/imageButton"
+                android:scaleType="centerInside"
+                android:layout_gravity="center"
+                android:background="@mipmap/ic_launcher"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+
+                <TextView
+                    android:text="TI - FOOD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="36sp"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:text="Tiền Giang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="32sp"
+                    android:textColor="@color/colorPrimary"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="118dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnAllPlace"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/home_eat"
+                    android:layout_weight="0.33"
+                    android:layout_width="119dp"/>
+
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton3"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/home_enjoy"
+                    android:layout_weight="0.33"
+                    android:layout_width="119dp"/>
+
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton4"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/home_stay"
+                    android:layout_width="119dp"
+                    android:layout_weight="0.33"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="37dp">
+
+                <TextView
+                    android:text="Tất cả"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView7"
+                    android:layout_weight="1.12"
+                    android:gravity="center"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:text="Nổi bật"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView6"
+                    android:layout_weight="0.75"
+                    android:gravity="center"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:text="Yêu thích"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView4"
+                    android:gravity="center"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_weight="0.74"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fra_home_weather_about_container"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/fra_home_weather"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/fra_home_weather_icon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"/>
+
+                    <TextView
+                        android:id="@+id/fra_home_weather_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/fra_home_weather_icon"
+                        android:layout_toRightOf="@id/fra_home_weather_icon"
+                        android:textColor="@android:color/white"
+                        android:textSize="30sp"/>
+
+                    <TextView
+                        android:id="@+id/fra_home_weather_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/fra_home_weather_temp"
+                        android:layout_toRightOf="@id/fra_home_weather_icon"
+                        android:textColor="@android:color/white"
+                        android:textSize="19sp"/>
+
+                    <ImageView
+                        android:id="@+id/fra_home_no_weather_icon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_no_weather"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/fra_home_no_weather"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/fra_home_no_weather_icon"
+                        android:text="@string/no_weather"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:visibility="gone"/>
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"/>
+
+                <LinearLayout
+                    android:id="@+id/fra_home_about_container"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.40"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_weight="0.12"
+                        android:scaleType="centerInside"
+                        android:background="@android:drawable/ic_dialog_info"
+                        android:layout_height="22dp"
+                        android:layout_width="20dp"/>
+
+                    <TextView
+                        android:text="Thông Tin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView5"
+                        android:layout_weight="0.12"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.12">
+
+                <TextView
+                    android:layout_width="286dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/home_arround_me"
+                    android:gravity="center"
+                    android:text="@string/home_scannow"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:id="@+id/btnScanner" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>
